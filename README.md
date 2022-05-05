@@ -4,7 +4,7 @@
 
 # Flatpak repository
 
-This is the Flatpak repository for [GDevelop on Flathub](flathub.org/apps/details/io.gdevelop.ide).
+This is the Flatpak repository for [GDevelop on Flathub](https://flathub.org/apps/details/io.gdevelop.ide).
 
 See [Flathub documentation for more information](https://github.com/flathub/flathub/wiki/App-Maintenance).
 
