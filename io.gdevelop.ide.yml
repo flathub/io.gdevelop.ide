@@ -42,7 +42,7 @@ modules:
       - ln -s "/app/GDevelop/gdevelop" /app/bin
       - install -Dm644 io.gdevelop.ide.appdata.xml -t /app/share/metainfo
       - mv ${FLATPAK_DEST}/share/applications/gdevelop.desktop ${FLATPAK_DEST}/share/applications/${FLATPAK_ID}.desktop
-      - desktop-file-edit --set-key Exec --set-value "run.sh gdevelop %U" ${FLATPAK_DEST}/share/applications/${FLATPAK_ID}.desktop
+      - desktop-file-edit --set-key Exec --set-value "run.sh %U" ${FLATPAK_DEST}/share/applications/${FLATPAK_ID}.desktop
       - desktop-file-edit --set-key Icon --set-value "io.gdevelop.ide" ${FLATPAK_DEST}/share/applications/${FLATPAK_ID}.desktop
       - rm -rf ${FLATPAK_DEST}/share/icons/hicolor/1024x1024/
       - find ${FLATPAK_DEST}/share/icons -type f -name *.png -exec rename gdevelop.png ${FLATPAK_ID}.png '{}' \;
