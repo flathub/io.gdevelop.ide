@@ -12,6 +12,18 @@ You can download GDevelop for other operating system from [the official website]
 
 ## Contributing to the Flatpak
 
+### Upgrading to a newer GDevelop version
+
+1. Create a commit with:
+   - An upgrade the `.deb` file to use in `io.gdevelop.ide.yml` and its checksum.
+   - A new `release` in `io.gdevelop.ide.appdata.xml`.
+2. Merge in the `master` branch.
+3. Follow the build that will be automatically be done on https://buildbot.flathub.org/#/.
+4. Open the build page and click on "Publish" when the build is done.
+5. Verify [the app is updated on Flathub](https://flathub.org/apps/details/io.gdevelop.ide) a few minutes later.
+
+### Testing locally
+
 Clone this repository and build locally:
 
 ```sh
@@ -19,5 +31,3 @@ git clone https://github.com/flathub/io.gdevelop.ide.git && cd io.gdevelop.ide
 flatpak-builder --user --install --force-clean build-dir io.gdevelop.ide.yml
 flatpak run io.gdevelop.ide
 ```
-
-Once a Pull Request is merged in this repository, Flathub will automatically rebuild it and publish it.
