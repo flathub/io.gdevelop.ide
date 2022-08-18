@@ -19,6 +19,13 @@
 	<url type="bugtracker">https://forum.gdevelop.io/</url>
 	<launchable type="desktop-id">io.gdevelop.ide.desktop</launchable>
 	<releases>
+		<release version="5.0.140" date="2022-08-18">
+			<description>
+				<ul>
+					<li>Updated to version 5.0.140. See the full changelog in the app.</li>
+				</ul>
+			</description>
+		</release>
 		<release version="5.0.139" date="2022-07-22">
 			<description>
 				<ul>
