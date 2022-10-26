@@ -1,9 +1,9 @@
 # This is the Flatpak manifest for GDevelop.
 app-id: io.gdevelop.ide
 base: org.electronjs.Electron2.BaseApp
-base-version: '21.08'
+base-version: "21.08"
 runtime: org.freedesktop.Platform
-runtime-version: '21.08'
+runtime-version: "21.08"
 sdk: org.freedesktop.Sdk
 command: run.sh
 separate-locales: false
@@ -24,8 +24,8 @@ modules:
 
     sources:
       - type: file
-        url: https://gdevelop-releases.s3.amazonaws.com/master/commit/4dbabab052a77849696335b68597e44b21ea9682/gdevelop_5.0.146_amd64.deb
-        sha256: 70b83f50798e16dfd87a9c8765cde83b8ff9327da21b11b7b0f8444ba6ac0226
+        url: https://gdevelop-releases.s3.amazonaws.com/master/commit/386e23b042282413da41c398043f4ccbc1bddaa7/gdevelop_5.1.148_amd64.deb
+        sha256: c220d75a07eab0fb764ec89325316b29af16d85c27cf7c1e071eab237218f19c
       - type: file
         path: io.gdevelop.ide.appdata.xml
       - type: script
