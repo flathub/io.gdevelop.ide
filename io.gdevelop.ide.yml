@@ -1,9 +1,9 @@
 # This is the Flatpak manifest for GDevelop.
 app-id: io.gdevelop.ide
 base: org.electronjs.Electron2.BaseApp
-base-version: '21.08'
+base-version: "21.08"
 runtime: org.freedesktop.Platform
-runtime-version: '21.08'
+runtime-version: "21.08"
 sdk: org.freedesktop.Sdk
 command: run.sh
 separate-locales: false

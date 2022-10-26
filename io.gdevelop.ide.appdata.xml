@@ -19,7 +19,7 @@
 	<url type="bugtracker">https://forum.gdevelop.io/</url>
 	<launchable type="desktop-id">io.gdevelop.ide.desktop</launchable>
 	<releases>
-		<release version="5.1.148" date="2022-10-26">
+		<release version="5.1.148" date="2022-10-27">
 			<description>
 				<ul>
 					<li>Updated to version 5.1.148. See the full changelog in the app.</li>
@@ -89,5 +89,5 @@
 			<image type="source">https://raw.githubusercontent.com/4ian/GDevelop/master/newIDE/GDevelop%20screenshot.png</image>
 		</screenshot>
 	</screenshots>
-  <content_rating type="oars-1.1" />
+	<content_rating type="oars-1.1" />
 </component>
