@@ -6,19 +6,35 @@
 	<name>GDevelop</name>
 	<summary>Fast and Easy Game-Making</summary>
 	<description>
-		<p>GDevelop is a full-featured, no-code, open-source game development software. You can build games for mobile, desktop and the web. GDevelop is fast and easy to use: the game logic is built up using an intuitive and powerful event-based system.</p>
+		<p>GDevelop is a full-featured, no-code, open-source game development software. You can build
+			games for mobile, desktop and the web. GDevelop is fast and easy to use: the game logic is
+			built up using an intuitive and powerful event-based system.</p>
 
-		<p>With GDevelop, you can make simple projects for fun, create ambitious indie games or even build the next hit, grossing 1 million downloads like some games powered by GDevelop! Professionals, educators or hobbyists all use GDevelop for game making.</p>
+		<p>With GDevelop, you can make simple projects for fun, create ambitious indie games or even
+			build the next hit, grossing 1 million downloads like some games powered by GDevelop!
+			Professionals, educators or hobbyists all use GDevelop for game making.</p>
 
-		<p>What makes GDevelop unique and so easy to use are the events and behaviors. Events are a powerful way to express the logic of your game, without having to learn a programming language. Behaviors are pre-made logic that you can create and attach to your game objects. It's simpler and faster than code, and super powerful.</p>
+		<p>What makes GDevelop unique and so easy to use are the events and behaviors. Events are a
+			powerful way to express the logic of your game, without having to learn a programming
+			language. Behaviors are pre-made logic that you can create and attach to your game objects.
+			It's simpler and faster than code, and super powerful.</p>
 
-		<p>Publish your games on the web, make a mobile app for iOS and Android, publish on Steam, Facebook, Itch.io, Newgrounds, the Windows store... Games created with GDevelop run anywhere and can be packaged in a single click.</p>
+		<p>Publish your games on the web, make a mobile app for iOS and Android, publish on Steam,
+			Facebook, Itch.io, Newgrounds, the Windows store... Games created with GDevelop run anywhere
+			and can be packaged in a single click.</p>
 	</description>
 	<url type="homepage">https://gdevelop.io</url>
 	<url type="help">https://wiki.gdevelop.io/</url>
 	<url type="bugtracker">https://forum.gdevelop.io/</url>
 	<launchable type="desktop-id">io.gdevelop.ide.desktop</launchable>
 	<releases>
+		<release version="5.1.153" date="2022-12-19">
+			<description>
+				<ul>
+					<li>Updated to version 5.1.153. See the full changelog in the app.</li>
+				</ul>
+			</description>
+		</release>
 		<release version="5.1.151" date="2022-11-16">
 			<description>
 				<ul>
@@ -100,7 +116,8 @@
 	<developer_name>GDevelop Team</developer_name>
 	<screenshots>
 		<screenshot type="default">
-			<image type="source">https://raw.githubusercontent.com/4ian/GDevelop/master/newIDE/GDevelop%20screenshot.png</image>
+			<image type="source">
+				https://raw.githubusercontent.com/4ian/GDevelop/master/newIDE/GDevelop%20screenshot.png</image>
 		</screenshot>
 	</screenshots>
 	<content_rating type="oars-1.1" />
