@@ -24,8 +24,8 @@ modules:
 
     sources:
       - type: file
-        url: https://gdevelop-releases.s3.amazonaws.com/master/commit/3923641988c0222e523bee9045e1ef3e66be05e3/gdevelop_5.2.176_amd64.deb
-        sha256: 9d167ce3dfbfeba6920eb6f2cf74507bb7093358eb4a0b34e7374680681e4de2
+        url: https://gdevelop-releases.s3.amazonaws.com/master/commit/f6539626d35c77de6049bd22f79e38fa1aeaa17f/gdevelop_5.3.179_amd64.deb
+        sha256: 89bdf4b6a0af638aa4929999130571d5d1092e2f56b76510900ffdb20f6a38d0
       - type: file
         path: io.gdevelop.ide.appdata.xml
       - type: script
