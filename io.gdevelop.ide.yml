@@ -7,6 +7,8 @@ runtime-version: "22.08"
 sdk: org.freedesktop.Sdk
 command: run.sh
 separate-locales: false
+rename-desktop-file: gdevelop.desktop
+rename-icon: gdevelop
 finish-args:
   - --share=ipc
   - --socket=wayland
@@ -61,9 +63,6 @@ modules:
       - mv "/app/GDevelop 5" "/app/GDevelop"
       - ln -s "/app/GDevelop/gdevelop" /app/bin
       - install -Dm644 io.gdevelop.ide.appdata.xml -t /app/share/metainfo
-      - mv ${FLATPAK_DEST}/share/applications/gdevelop.desktop ${FLATPAK_DEST}/share/applications/${FLATPAK_ID}.desktop
-      - desktop-file-edit --set-key Exec --set-value "run.sh %U" ${FLATPAK_DEST}/share/applications/${FLATPAK_ID}.desktop
-      - desktop-file-edit --set-key Icon --set-value "io.gdevelop.ide" ${FLATPAK_DEST}/share/applications/${FLATPAK_ID}.desktop
+      - desktop-file-edit --set-key Exec --set-value "run.sh %U" ${FLATPAK_DEST}/share/applications/gdevelop.desktop
       - rm -rf ${FLATPAK_DEST}/share/icons/hicolor/1024x1024/
-      - find ${FLATPAK_DEST}/share/icons -type f -name *.png -exec rename gdevelop.png ${FLATPAK_ID}.png '{}' \;
       - install -Dm755 -t /app/bin/ run.sh
