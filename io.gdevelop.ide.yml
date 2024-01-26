@@ -26,6 +26,13 @@ modules:
       - type: file
         url: https://gdevelop-releases.s3.amazonaws.com/master/commit/9eb721662f404d9cc215467ab132bf977fb24121/gdevelop_5.3.187_amd64.deb
         sha256: 65b816fd68f2728e808720e2d3b1763942414f629e53ffa774b779bae748ad65
+        only-arches:
+          - x86_64
+      - type: file
+        url: https://gdevelop-releases.s3.amazonaws.com/master/commit/9eb721662f404d9cc215467ab132bf977fb24121/gdevelop_5.3.187_arm64.deb
+        sha256: 8f7a5248256dac5c63c7e8c79d4824b9bbb5c47924dc171f4a25fef551c75acf
+        only-arches:
+          - aarch64
       - type: file
         path: io.gdevelop.ide.appdata.xml
       - type: script
@@ -34,7 +41,7 @@ modules:
           - zypak-wrapper.sh "/app/GDevelop/gdevelop" "$@"
 
     build-commands:
-      - ar x gdevelop_*_amd64.deb
+      - ar x gdevelop_*.deb
       - tar -xf data.tar.xz
       - cp -r ./opt/* /app/
       - cp -r ./usr/share/* /app/share/
