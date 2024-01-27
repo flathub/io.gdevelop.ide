@@ -24,13 +24,13 @@ modules:
 
     sources:
       - type: file
-        url: https://gdevelop-releases.s3.amazonaws.com/master/commit/9eb721662f404d9cc215467ab132bf977fb24121/gdevelop_5.3.187_amd64.deb
-        sha256: 65b816fd68f2728e808720e2d3b1763942414f629e53ffa774b779bae748ad65
+        url: https://gdevelop-releases.s3.amazonaws.com/master/commit/13cf9b1d0b1ad06da2fff21ff366886922081b9c/gdevelop_5.3.188_amd64.deb
+        sha256: 4d9123a46e8419ee17a9fadcec90a5b6f378e364ad274fee75d2456c38fbca22
         only-arches:
           - x86_64
       - type: file
-        url: https://gdevelop-releases.s3.amazonaws.com/master/commit/9eb721662f404d9cc215467ab132bf977fb24121/gdevelop_5.3.187_arm64.deb
-        sha256: 8f7a5248256dac5c63c7e8c79d4824b9bbb5c47924dc171f4a25fef551c75acf
+        url: https://gdevelop-releases.s3.amazonaws.com/master/commit/13cf9b1d0b1ad06da2fff21ff366886922081b9c/gdevelop_5.3.188_arm64.deb
+        sha256: 14f947da36f74383ca58adb7fc4874f06af859b5c3028be5376342b40469d005
         only-arches:
           - aarch64
       - type: file
