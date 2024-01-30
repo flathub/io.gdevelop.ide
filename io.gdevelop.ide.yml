@@ -1,12 +1,14 @@
 # This is the Flatpak manifest for GDevelop.
 app-id: io.gdevelop.ide
 base: org.electronjs.Electron2.BaseApp
-base-version: "22.08"
+base-version: '23.08'
 runtime: org.freedesktop.Platform
-runtime-version: "22.08"
+runtime-version: '23.08'
 sdk: org.freedesktop.Sdk
 command: run.sh
 separate-locales: false
+rename-desktop-file: gdevelop.desktop
+rename-icon: gdevelop
 finish-args:
   - --share=ipc
   - --socket=wayland
@@ -28,11 +30,24 @@ modules:
         sha256: 4d9123a46e8419ee17a9fadcec90a5b6f378e364ad274fee75d2456c38fbca22
         only-arches:
           - x86_64
+        x-checker-data:
+          is-main-source: true
+          type: json
+          url: https://api.github.com/repos/4ian/GDevelop/tags
+          version-query: .[0].name | sub("^v"; "")
+          url-query: |
+            .[0] | "https://gdevelop-releases.s3.amazonaws.com/master/commit/" + .commit.sha + "/gdevelop_" + (.name| sub("^v"; "")) + "_amd64.deb"
       - type: file
         url: https://gdevelop-releases.s3.amazonaws.com/master/commit/13cf9b1d0b1ad06da2fff21ff366886922081b9c/gdevelop_5.3.188_arm64.deb
         sha256: 14f947da36f74383ca58adb7fc4874f06af859b5c3028be5376342b40469d005
         only-arches:
           - aarch64
+        x-checker-data:
+          type: json
+          url: https://api.github.com/repos/4ian/GDevelop/tags
+          version-query: .[0].name | sub("^v"; "")
+          url-query: |
+            .[0] | "https://gdevelop-releases.s3.amazonaws.com/master/commit/" + .commit.sha + "/gdevelop_" + (.name| sub("^v"; "")) + "_arm64.deb"
       - type: file
         path: io.gdevelop.ide.appdata.xml
       - type: script
@@ -48,9 +63,6 @@ modules:
       - mv "/app/GDevelop 5" "/app/GDevelop"
       - ln -s "/app/GDevelop/gdevelop" /app/bin
       - install -Dm644 io.gdevelop.ide.appdata.xml -t /app/share/metainfo
-      - mv ${FLATPAK_DEST}/share/applications/gdevelop.desktop ${FLATPAK_DEST}/share/applications/${FLATPAK_ID}.desktop
-      - desktop-file-edit --set-key Exec --set-value "run.sh %U" ${FLATPAK_DEST}/share/applications/${FLATPAK_ID}.desktop
-      - desktop-file-edit --set-key Icon --set-value "io.gdevelop.ide" ${FLATPAK_DEST}/share/applications/${FLATPAK_ID}.desktop
+      - desktop-file-edit --set-key Exec --set-value "run.sh %U" ${FLATPAK_DEST}/share/applications/gdevelop.desktop
       - rm -rf ${FLATPAK_DEST}/share/icons/hicolor/1024x1024/
-      - find ${FLATPAK_DEST}/share/icons -type f -name *.png -exec rename gdevelop.png ${FLATPAK_ID}.png '{}' \;
       - install -Dm755 -t /app/bin/ run.sh
