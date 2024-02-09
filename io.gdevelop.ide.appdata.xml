@@ -28,6 +28,7 @@
 	<url type="bugtracker">https://forum.gdevelop.io/</url>
 	<launchable type="desktop-id">io.gdevelop.ide.desktop</launchable>
 	<releases>
+		<release version="5.3.189" date="2024-02-09"/>
 		<release version="5.3.188" date="2024-01-26">
 			<description>
 				<ul>
@@ -274,5 +275,5 @@
 				https://raw.githubusercontent.com/4ian/GDevelop/master/newIDE/GDevelop%20screenshot.png</image>
 		</screenshot>
 	</screenshots>
-	<content_rating type="oars-1.1" />
+	<content_rating type="oars-1.1"/>
 </component>
