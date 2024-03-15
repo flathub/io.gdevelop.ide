@@ -28,6 +28,7 @@
 	<url type="bugtracker">https://forum.gdevelop.io/</url>
 	<launchable type="desktop-id">io.gdevelop.ide.desktop</launchable>
 	<releases>
+		<release version="5.3.195" date="2024-03-14"/>
 		<release version="5.3.194" date="2024-03-08"/>
 		<release version="5.3.193" date="2024-03-08"/>
 		<release version="5.3.192" date="2024-03-01"/>
