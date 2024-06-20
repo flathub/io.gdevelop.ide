@@ -1,9 +1,9 @@
 # This is the Flatpak manifest for GDevelop.
 app-id: io.gdevelop.ide
 base: org.electronjs.Electron2.BaseApp
-base-version: '23.08'
+base-version: "23.08"
 runtime: org.freedesktop.Platform
-runtime-version: '23.08'
+runtime-version: "23.08"
 sdk: org.freedesktop.Sdk
 command: run.sh
 separate-locales: false
@@ -26,8 +26,8 @@ modules:
 
     sources:
       - type: file
-        url: https://gdevelop-releases.s3.amazonaws.com/master/commit/a8a8c142a3b70e4b204f6b0877104d081cae5d14/gdevelop_5.4.202-beta_amd64.deb
-        sha256: c5b24327c400247787d186a3869cf37f69a1c74a8e440fe84237af5a550c96e4
+        url: https://gdevelop-releases.s3.amazonaws.com/master/commit/740c7ae8bcad0df67600f93142c1fb2f1e298ce7/gdevelop_5.4.204_amd64.deb
+        sha256: 3f100037d8a0adad46aac1157bfc06047590f7e4a0f1d25e58b0e0c735d3de56
         only-arches:
           - x86_64
         x-checker-data:
@@ -38,8 +38,8 @@ modules:
           url-query: |
             .[0] | "https://gdevelop-releases.s3.amazonaws.com/master/commit/" + .commit.sha + "/gdevelop_" + (.name| sub("^v"; "")) + "_amd64.deb"
       - type: file
-        url: https://gdevelop-releases.s3.amazonaws.com/master/commit/a8a8c142a3b70e4b204f6b0877104d081cae5d14/gdevelop_5.4.202-beta_arm64.deb
-        sha256: aec0630b280ce938b8e896bef351e83bca96fa3cfdca20ddc757eaaf304c8d7d
+        url: https://gdevelop-releases.s3.amazonaws.com/master/commit/740c7ae8bcad0df67600f93142c1fb2f1e298ce7/gdevelop_5.4.204_arm64.deb
+        sha256: a4787de7bd919dc05c58d684620dfd9d1463d9798019ae17f374c6ca520f6320
         only-arches:
           - aarch64
         x-checker-data:
