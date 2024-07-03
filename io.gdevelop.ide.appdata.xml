@@ -28,6 +28,9 @@
 	<url type="bugtracker">https://forum.gdevelop.io/</url>
 	<launchable type="desktop-id">io.gdevelop.ide.desktop</launchable>
 	<releases>
+		<release version="5.4.205" date="2024-07-03">
+			<description></description>
+		</release>
 		<release version="5.4.204" date="2024-06-20">
 			<description>
 				<ul>
@@ -36,18 +39,18 @@
 			</description>
 		</release>
 		<release version="5.4.202-beta" date="2024-06-08">
-			<description></description>
+			<description/>
 		</release>
-		<release version="5.3.201" date="2024-04-29" />
-		<release version="5.3.200" date="2024-04-23" />
-		<release version="5.3.198" date="2024-04-03" />
-		<release version="5.3.196" date="2024-03-28" />
-		<release version="5.3.195" date="2024-03-14" />
-		<release version="5.3.194" date="2024-03-08" />
-		<release version="5.3.193" date="2024-03-08" />
-		<release version="5.3.192" date="2024-03-01" />
-		<release version="5.3.191" date="2024-02-29" />
-		<release version="5.3.189" date="2024-02-09" />
+		<release version="5.3.201" date="2024-04-29"/>
+		<release version="5.3.200" date="2024-04-23"/>
+		<release version="5.3.198" date="2024-04-03"/>
+		<release version="5.3.196" date="2024-03-28"/>
+		<release version="5.3.195" date="2024-03-14"/>
+		<release version="5.3.194" date="2024-03-08"/>
+		<release version="5.3.193" date="2024-03-08"/>
+		<release version="5.3.192" date="2024-03-01"/>
+		<release version="5.3.191" date="2024-02-29"/>
+		<release version="5.3.189" date="2024-02-09"/>
 		<release version="5.3.188" date="2024-01-26">
 			<description>
 				<ul>
@@ -294,5 +297,5 @@
 				https://raw.githubusercontent.com/4ian/GDevelop/master/newIDE/GDevelop%20screenshot.png</image>
 		</screenshot>
 	</screenshots>
-	<content_rating type="oars-1.1" />
+	<content_rating type="oars-1.1"/>
 </component>
