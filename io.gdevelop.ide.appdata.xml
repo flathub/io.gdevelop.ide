@@ -28,8 +28,11 @@
 	<url type="bugtracker">https://forum.gdevelop.io/</url>
 	<launchable type="desktop-id">io.gdevelop.ide.desktop</launchable>
 	<releases>
-		<release version="5.5.230" date="2025-05-06">
+		<release version="5.5.231" date="2025-05-15">
 			<description></description>
+		</release>
+		<release version="5.5.230" date="2025-05-06">
+			<description/>
 		</release>
 		<release version="5.5.228" date="2025-03-28">
 			<description/>
