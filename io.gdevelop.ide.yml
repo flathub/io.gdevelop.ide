@@ -26,8 +26,8 @@ modules:
 
     sources:
       - type: file
-        url: https://gdevelop-releases.s3.amazonaws.com/master/commit/a28869b0b2c540ffb847b866f9c21db0ace1aa22/gdevelop_5.6.264_amd64.deb
-        sha256: 9548086c0477d6ce0e2722285f0954d784e4381d0b56235b14ab9873dcf72c8b
+        url: https://gdevelop-releases.s3.amazonaws.com/master/commit/bdcc9f10661accefe6390425ac302e05f0c4d85f/gdevelop_5.6.265_amd64.deb
+        sha256: c387439afcbdd21f2dd459dfb8a858784beb5cab25f222b51faa592c7c722513
         only-arches:
           - x86_64
         x-checker-data:
@@ -38,8 +38,8 @@ modules:
           url-query: |
             .[0] | "https://gdevelop-releases.s3.amazonaws.com/master/commit/" + .commit.sha + "/gdevelop_" + (.name| sub("^v"; "")) + "_amd64.deb"
       - type: file
-        url: https://gdevelop-releases.s3.amazonaws.com/master/commit/a28869b0b2c540ffb847b866f9c21db0ace1aa22/gdevelop_5.6.264_arm64.deb
-        sha256: 497a1ef8fac602b5409caba14aa84e846edc4629c236c258349d06b5f9c883d1
+        url: https://gdevelop-releases.s3.amazonaws.com/master/commit/bdcc9f10661accefe6390425ac302e05f0c4d85f/gdevelop_5.6.265_arm64.deb
+        sha256: aa0a1210478fe2fef6eb5c3af36f54ba20cecb002a08467eaa09cd9cb04bfd7c
         only-arches:
           - aarch64
         x-checker-data:
