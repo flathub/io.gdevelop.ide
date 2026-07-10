@@ -28,6 +28,11 @@
 	<url type="bugtracker">https://forum.gdevelop.io/</url>
 	<launchable type="desktop-id">io.gdevelop.ide.desktop</launchable>
 	<releases>
+        <release version="5.6.273" date="2026-06-30">
+          <description>
+            <p>Update GDevelop to 5.6.273.</p>
+          </description>
+        </release>
 		<release version="5.6.272" date="2026-06-17">
 			<description></description>
 		</release>
